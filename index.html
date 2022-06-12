@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Financr - My Balance</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <header class="box header">
+      <div class="balance">
+        <h3>My balance</h3>
+        <span>$921.48</span>
+      </div>
+      <img src="/images/logo.svg" alt="financr">
+    </header>
+    
+    <main class="box data">
+      <section class="weekly">
+        <h1>Spending - Last 7 days</h1>
+        <ul class="bars">
+          <li><div class="bar" data-percentage=""></div><span>mon</span></li>
+          <li><div class="bar" data-percentage=""></div><span>tue</span></li>
+          <li><div class="bar" data-percentage=""></div><span>wed</span></li>
+          <li><div class="bar" data-percentage=""></div><span>thu</span></li>
+          <li><div class="bar" data-percentage=""></div><span>fri</span></li>
+          <li><div class="bar" data-percentage=""></div><span>sat</span></li>
+          <li><div class="bar" data-percentage=""></div><span>sun</span></li>
+        </ul>
+      </section>
+      <section class="monthly">
+        <div class="this-month">
+          <h3>Total this month</h3>
+          <span>$478.33</span>
+        </div>
+  
+        <div class="from-last-month">
+          <h3>+2.4%</h3>
+          <span>from last month</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </div>
+
+  <script type="text/javascript" src="/data.json"></script>
+  <script type="text/javascript" src="public/js/main.js"></script>
+</body>
+</html>
