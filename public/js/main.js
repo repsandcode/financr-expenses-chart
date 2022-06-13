@@ -1,2 +1,5 @@
-const data = require('/Users/AJ Borja/OneDrive/Documents/only webdev practice/frontend-mentor/expenses-chart-component-main/data.json')
-console.log(data)
+const bar = document.querySelector('.bar');
+
+Array.from(bar).forEach((element)=>{
+  element.addEventListener('click', deleteTask)
+})

@@ -53,16 +53,60 @@ li{
   margin-top: 1rem;
 }
 
+.data .weekly{
+  padding-bottom: 3rem;
+}
+
 .data .weekly h1{
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-.weekly ul li{
-  display: table-cell;
-  width: 14.28%;
+.weekly .bars{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 13px;
+  grid-row-gap: 0px;
 }
 
+.weekly .bars li{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.bars .bar{
+  background: var(--Soft-red);
+  border-radius: .15rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+  transition-property: background, box-shadow;
+}
+
+.bars span{
+  color: var(--Medium-brown);
+  font-size: .8rem;
+
+  width: 100%;
+  position: absolute;
+  bottom: -1.6rem;
+  text-align: center;
+}
+
+.bars .bar:before{
+  background: var(--Dark-brown);
+  color: var(--Cream);
+  content: '$' attr(data-percentage);
+  font-size: .8rem;
+  padding: .2rem;
+  
+  position: relative;
+  bottom: 3rem;
+  left: -.3rem;
+}
 
 
 /* monthly section */

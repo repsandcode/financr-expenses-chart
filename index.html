@@ -11,8 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="public/css/style.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  
 </head>
 <body>
 
@@ -29,13 +32,13 @@
       <section class="weekly">
         <h1>Spending - Last 7 days</h1>
         <ul class="bars">
-          <li><div class="bar" data-percentage=""></div><span>mon</span></li>
-          <li><div class="bar" data-percentage=""></div><span>tue</span></li>
-          <li><div class="bar" data-percentage=""></div><span>wed</span></li>
-          <li><div class="bar" data-percentage=""></div><span>thu</span></li>
-          <li><div class="bar" data-percentage=""></div><span>fri</span></li>
-          <li><div class="bar" data-percentage=""></div><span>sat</span></li>
-          <li><div class="bar" data-percentage=""></div><span>sun</span></li>
+          <li><div class="bar" data-percentage="17.45"></div><span>mon</span></li>
+          <li><div class="bar" data-percentage="34.91"></div><span>tue</span></li>
+          <li><div class="bar" data-percentage="52.36"></div><span>wed</span></li>
+          <li><div class="bar" data-percentage="31.07"></div><span>thu</span></li>
+          <li><div class="bar" data-percentage="23.39"></div><span>fri</span></li>
+          <li><div class="bar" data-percentage="43.28"></div><span>sat</span></li>
+          <li><div class="bar" data-percentage="25.48"></div><span>sun</span></li>
         </ul>
       </section>
       <section class="monthly">
@@ -58,6 +61,17 @@
   </div>
 
   <script type="text/javascript" src="/data.json"></script>
-  <script type="text/javascript" src="public/js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      $('.bars li .bar').each(function(key, bar){
+        const percentage = $(this).data('percentage');
+        $(this).animate({
+          'height' : percentage + '%'
+        },2000);
+      });
+    });
+  </script>
 </body>
 </html>
