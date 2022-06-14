@@ -96,15 +96,19 @@ li{
   text-align: center;
 }
 
-.bars .bar:before{
+.bars .bar::after{
+  
+}
+
+.bars .bar .amount{
   background: var(--Dark-brown);
+  border-radius: .2rem;
   color: var(--Cream);
-  content: '$' attr(data-percentage);
-  font-size: .8rem;
-  padding: .2rem;
+  font-size: .7rem;
+  padding: .3rem;
   
   position: relative;
-  bottom: 3rem;
+  bottom: 2rem;
   left: -.3rem;
 }
 
