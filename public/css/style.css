@@ -54,7 +54,7 @@ li{
 }
 
 .data .weekly{
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
 }
 
 .data .weekly h1{
@@ -81,36 +81,35 @@ li{
   border-radius: .15rem;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 3rem;
   transition: 1s;
   transition-property: background, box-shadow;
 }
+.bars .bar::after{
+  background: var(--Dark-brown);
+  border-radius: .2rem;
+  color: var(--Cream);
+  content: '$'attr(data-percentage);
+  font-size: .8rem;
+  padding: .3rem;
+  position: relative;
+  bottom: 2rem;
+  left: -.3rem;
 
-.bars span{
+  visibility: hidden;
+}
+
+.bars .day{
   color: var(--Medium-brown);
   font-size: .8rem;
 
   width: 100%;
   position: absolute;
-  bottom: -1.6rem;
+  bottom: 1.3rem;
+  left: 0;
   text-align: center;
 }
 
-.bars .bar::after{
-  
-}
-
-.bars .bar .amount{
-  background: var(--Dark-brown);
-  border-radius: .2rem;
-  color: var(--Cream);
-  font-size: .7rem;
-  padding: .3rem;
-  
-  position: relative;
-  bottom: 2rem;
-  left: -.3rem;
-}
 
 
 /* monthly section */
