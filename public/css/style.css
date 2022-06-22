@@ -99,8 +99,10 @@ li{
   padding: .3rem;
   position: relative;
   bottom: 2rem;
-  left: -.3rem;
+  left: -.25em;
+}
 
+.bars .bar.hidden:after {
   display: none;
 }
 
