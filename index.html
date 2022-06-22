@@ -88,7 +88,6 @@
     </div> -->
   </div>
 
-  <script type="text/javascript" src="/data.json"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
   <script type="text/javascript">
@@ -100,6 +99,30 @@
         },2000);
       });
     });
+
+    const day = document.querySelectorAll('.day');
+    const bar = document.querySelectorAll('.bar');
+    const amount = document.querySelectorAll('.amount');
+
+    Array.from(day).forEach((daySpan)=>{
+      const date = Date.now();
+      const today = new Date(date).toDateString().substring(0,3).toLowerCase();
+      const value = daySpan.innerText
+      if(value === today){
+        daySpan.previousElementSibling.classList.toggle('cyan');
+      }else{
+        daySpan.previousElementSibling.classList.toggle('soft-red');
+      }
+    })
+
+    Array.from(bar).forEach((divBar)=>{
+      divBar.addEventListener('mouseover', showAmount)
+    })
+
+    function showAmount() {
+      
+    }
+
   </script>
 </body>
 </html>

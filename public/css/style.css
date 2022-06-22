@@ -77,14 +77,19 @@ li{
 }
 
 .bars .bar{
-  background: var(--Soft-red);
   border-radius: .15rem;
+  cursor: pointer;
   width: 100%;
   position: absolute;
   bottom: 3rem;
   transition: 1s;
   transition-property: background, box-shadow;
 }
+
+.bars .bar:hover{
+  opacity: .78;
+}
+
 .bars .bar::after{
   background: var(--Dark-brown);
   border-radius: .2rem;
@@ -96,7 +101,7 @@ li{
   bottom: 2rem;
   left: -.3rem;
 
-  visibility: hidden;
+  display: none;
 }
 
 .bars .day{
@@ -159,10 +164,31 @@ li{
   --Medium-brown: hsl(28, 10%, 53%);
   --Cream: hsl(27, 66%, 92%);
   --Very-pale-orange: hsl(33, 100%, 98%);
+
+  --Soft-red-light: hsl(10, 72%, 69%);
+  --Cyan-light: hsl(186, 34%, 73%);
 }
 
+/* toggle classes */
+.soft-red{
+  background: var(--Soft-red);
+}
 
+.cyan{
+  background: var(--Cyan);
+}
 
+.opacity{
+  opacity: .8;
+}
+
+/* .soft-red-light{
+  background: var(--Soft-red-light);
+}
+
+.cyan-light{
+  background: var(--Cyan-light);
+} */
 
 
 /* ATTRIBUTION */
