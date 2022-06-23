@@ -91,7 +91,7 @@ li{
 }
 
 .bars .bar::after{
-  background: var(--Dark-brown);
+  /* background: var(--Dark-brown);
   border-radius: .2rem;
   color: var(--Cream);
   content: '$'attr(data-percentage);
@@ -99,7 +99,7 @@ li{
   padding: .3rem;
   position: relative;
   bottom: 2rem;
-  left: -.25em;
+  left: -.25em; */
 }
 
 .bars .bar.hidden:after {
