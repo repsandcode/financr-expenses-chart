@@ -76,6 +76,10 @@ li{
   position: relative;
 }
 
+.bars .amount{
+  
+}
+
 .bars .bar{
   border-radius: .15rem;
   cursor: pointer;
@@ -88,22 +92,6 @@ li{
 
 .bars .bar:hover{
   opacity: .78;
-}
-
-.bars .bar::after{
-  /* background: var(--Dark-brown);
-  border-radius: .2rem;
-  color: var(--Cream);
-  content: '$'attr(data-percentage);
-  font-size: .8rem;
-  padding: .3rem;
-  position: relative;
-  bottom: 2rem;
-  left: -.25em; */
-}
-
-.bars .bar.hidden:after {
-  display: none;
 }
 
 .bars .day{

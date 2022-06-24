@@ -33,37 +33,37 @@
         <h1>Spending - Last 7 days</h1>
         <ul class="bars">
           <li>
-            <span class="amount">$17.45</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="17.45"></div>
             <span class="day">mon</span>
           </li>
           <li>
-            <span class="amount">$34.91</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="34.91"></div>
             <span class="day">tue</span>
           </li>
           <li>
-            <span class="amount">$52.36</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="52.36"></div>
             <span class="day">wed</span>
           </li>
           <li>
-            <span class="amount">$31.07</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="31.07"></div>
             <span class="day">thu</span>
           </li>
           <li>
-            <span class="amount">$23.39</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="23.39"></div>
             <span class="day">fri</span>
           </li>
           <li>
-            <span class="amount">$43.28</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="43.28"></div>
             <span class="day">sat</span>
           </li>
           <li>
-            <span class="amount">$25.48</span>
+            <span class="amount"></span>
             <div class="bar" data-percentage="25.48"></div>
             <span class="day">sun</span>
           </li>
@@ -101,9 +101,9 @@
     });
 
     const day = document.querySelectorAll('.day');
-    const bar = document.querySelectorAll('.bar');
     const amount = document.querySelectorAll('.amount');
-
+    const bar = document.querySelectorAll('.bar');
+    
     Array.from(day).forEach((daySpan)=>{
       const date = Date.now();
       const today = new Date(date).toDateString().substring(0,3).toLowerCase();
