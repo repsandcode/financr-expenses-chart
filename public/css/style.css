@@ -77,7 +77,7 @@ li{
 }
 
 .bars .amount{
-  
+  display: none;
 }
 
 .bars .bar{

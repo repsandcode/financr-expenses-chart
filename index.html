@@ -103,7 +103,7 @@
     const day = document.querySelectorAll('.day');
     const amount = document.querySelectorAll('.amount');
     const bar = document.querySelectorAll('.bar');
-    
+
     Array.from(day).forEach((daySpan)=>{
       const date = Date.now();
       const today = new Date(date).toDateString().substring(0,3).toLowerCase();
@@ -113,6 +113,11 @@
       }else{
         daySpan.previousElementSibling.classList.toggle('soft-red');
       }
+    })
+
+    Array.from(amount).forEach((amountEachDay)=>{
+      const spendings = amountEachDay.nextElementSibling.attributes[1].value;
+      amountEachDay.innerText = spendings;
     })
 
   </script>
