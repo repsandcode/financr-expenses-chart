@@ -117,7 +117,12 @@
 
     Array.from(amount).forEach((amountEachDay)=>{
       const spendings = amountEachDay.nextElementSibling.attributes[1].value;
+      const bar = amountEachDay.nextElementSibling;
       amountEachDay.innerText = spendings;
+
+      amountEachDay.style.position = 'absolute';
+      amountEachDay.style.color = 'hsl(33, 100%, 98%)';
+      amountEachDay.style.background = 'hsl(25, 47%, 15%)';
     })
 
   </script>

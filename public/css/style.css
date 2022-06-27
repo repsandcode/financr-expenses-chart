@@ -77,7 +77,13 @@ li{
 }
 
 .bars .amount{
-  display: none;
+  position: absolute;
+  color: var(--Very-pale-orange);
+  background: var(--Dark-brown);
+  font-size: .8rem;
+  position: absolute;
+  left: 0;
+  text-align: center;
 }
 
 .bars .bar{
